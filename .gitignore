@@ -1,6 +1,10 @@
 .anjuta_sym_db.db
 .anjuta/*
 .buildconfig
+.ipynb_checkpoints
+.autotools
+.cproject
+.project
 BDocs/*
 Coveralls/*
 Debug/*

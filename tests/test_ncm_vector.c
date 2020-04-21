@@ -257,7 +257,10 @@ test_ncm_vector_new (TestNcmVector *test, gconstpointer pdata)
 void
 test_ncm_vector_free (TestNcmVector *test, gconstpointer pdata)
 {
-  NcmVector *v = test->v;
+  NcmVector *v = ncm_vector_ref (test->v);
+  
+  ncm_vector_free (v);
+  
   NCM_TEST_FREE (ncm_vector_free, v);
 }
 
